@@ -76,7 +76,7 @@ if [[ -e /etc/openvpn/server.conf ]]; then
 			# Generates the custom client.ovpn
 			newclient "$CLIENT"
 			echo
-			echo "Client $CLIENT added, configuration is available at:" ~/"$CLIENT.ovpn"
+			echo "Client $CLIENT added, configuration is available at:" ~/openvpn/"$CLIENT.ovpn"
 			exit
 			;;
 			2)
@@ -166,7 +166,7 @@ if [[ -e /etc/openvpn/server.conf ]]; then
 	done
 else
 	clear
-	echo 'Welcome to this OpenVPN "road warrior" installer!'
+	echo 'Welcome to OpenVPN installer!'
 	echo
 	# OpenVPN setup and first user creation
 	echo "I need to ask you a few questions before starting the setup."
