@@ -1,0 +1,12 @@
+version: '3'
+services:
+  openvpn:
+    container_name: arthurian-vpn
+    build: .
+    cap_add:
+      - NET_ADMIN
+    restart: always
+    volumes:
+      - ./configs:/root/
+    ports:
+      - 1194:1194
