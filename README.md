@@ -18,7 +18,7 @@ You are not limited to only running the VPN on a physical machine, or VM, but yo
 
 To achieve this, start by building the docker container from the [Dockerfile](Dockerfile) by running:
 
-```
+```bash
 docker-compose up -d
 ```
 
@@ -26,7 +26,7 @@ The script builds an ubuntu container and copies the [install.sh](install.sh) ba
 
 The [install.sh](install.sh) bash file is what is used to build and configure the actual VPN. To do this, execute the [start.sh](start.sh) file:
 
-```
+```bash
 ./start.sh
 ```
 
@@ -34,7 +34,7 @@ Running the above command will ask for you to specify the container name, provid
 
 Doing this will land you inside the container in the directory where the installation script resides. Run the installation by typing:
 
-```
+```bash
 ./install.sh
 ```
 
@@ -42,4 +42,4 @@ You'll be prompted with a few questions, after which your vpn will be set up for
 
 `NOTE:` If you want to set your vpn port to anything other than `1194`, please make sure you change it not only in the [docker-compose.yaml](docker-compose.yaml), but also during the prompts.
 
-After all is finnished, check `configs` directory for your `.ovpn` `file, which you need to add to your open vpn client.
+After all is finnished, check `configs` directory for your `.ovpn` file, which you need to add to your open vpn client.
