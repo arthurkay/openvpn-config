@@ -43,3 +43,19 @@ You'll be prompted with a few questions, after which your vpn will be set up for
 `NOTE:` If you want to set your vpn port to anything other than `1194`, please make sure you change it not only in the [docker-compose.yaml](docker-compose.yaml), but also during the prompts.
 
 After all is finnished, check `configs` directory for your `.ovpn` file, which you need to add to your open vpn client.
+
+### OpenVPN Access Server
+
+To add an UI to your VPN use [debian-openvpn.sh](debian-openvpn.sh) for Debian based Linux distributions. And for RHEL based distributions use [rhel-openvpn.sh](rhel-openvpn.sh)
+
+The two files can be executed either as:
+
+```bash
+./debian-openvpn.sh
+```
+
+Or
+
+```bash
+./rhel-openvpn.sh
+```
